@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="blogpost.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Homepage" />
+    <meta name="description" content="Blogpost" />
     <script
       src="https://kit.fontawesome.com/0c38094ff5.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js" type="module"></script>
+    <script src="blogpost.js" type="module"></script>
     <link
       rel="icon"
       href="./media/ice-cream-solid.svg"
@@ -23,16 +23,24 @@
       <a href="index.html" class="header">Fed Up</a>
     </header>
     <main>
-      <h1>Newest blogs</h1>
-
-      <div id="loading">
+      <div id="loading" class="loader">
         <i
           class="fa-solid fa-ice-cream fa-fade fa-2xl"
           style="color: var(--main-color)"
         ></i>
       </div>
 
-      <div id="container"></div>
+      <div id="container">
+        <!-- <div class="card">
+          <img
+            src="${img}"
+            alt="featured image of ${post.title.rendered}"
+            class="image"
+          />
+          <h2 class="title">${post.title.rendered}</h2>
+          <p>${post.content.rendered}</p>
+        </div> -->
+      </div>
     </main>
     <footer></footer>
   </body>
