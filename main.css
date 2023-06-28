@@ -29,9 +29,9 @@
     box-sizing: border-box;
 }
 :root {
-    --main-color: #e8216d;
-    --main-color-light: #ffa3c6;
-    --main-color-dark: #ba0a4e;
+    --main-color: #e55151;
+    --main-color-light: #f38a8a;
+    --main-color-dark: #ab2525;
     --text-color-grey: #1a1a1a;
 }
 html, body {
@@ -73,6 +73,18 @@ body > footer {
 #loading {
     text-align: center;
     margin-top: 150px;
+}
+.loader {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    opacity: 1;
+    animation: fade 1.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
 }
 h1 {
     font-family: 'Roboto-Light';
